@@ -1,0 +1,22 @@
+import unittest
+import kalkulator
+
+class TestCalculator(unittest.TestCase):
+    def test_dodawanie(self):
+        self.assertEqual(kalkulator.dodawanie(2,3), 6)
+    def test_odejmowanie(self):
+        self.assertEqual(kalkulator.odejmowanie(3,1), 2)
+    def test_mnozenie(self):
+        self.assertEqual(kalkulator.mnozenie(2,3), 6)
+    def test_dzielenie(self):
+        self.assertEqual(kalkulator.dzielenie(10,5), 2)
+    def test_potega(self):
+        self.assertEqual(kalkulator.potega(2), 4)
+    def test_pierwiastkowanie(self):
+        self.assertEqual(kalkulator.pierwiastkowanie(4), 2)
+    def test_procent(self):
+        self.assertEqual(kalkulator.procent(10,2), 0)
+    def test_stopnieF(self):
+        self.assertEqual(kalkulator.stopnieF(20), 68)
+    def test_stopnieK(self):
+        self.assertEqual(kalkulator.stopnieK(20), 293.15)
